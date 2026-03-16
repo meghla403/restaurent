@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: "Arial Black", Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+{
+    box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 15px;
+    background-color: white;
+    font-family: "Arial Black", Arial, Helvetica, sans-serif;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=text] 
+    {
+    width: 95%;
+    padding: 14px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border-radius: 10px;
+    background: #F0F0F4;
+    font-family: "Arial Black", Arial, Helvetica, sans-serif;
+}
+
+input[type=text]:focus, input[type=text]:focus {
+    background: white; 
+    outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+    background-color: mediumorchid;
+    color: white;
+    padding: 15px 21px;
+    margin: 8px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 25%;
+    opacity: 0.5;
+    font-family: "Arial Black", Arial, Helvetica, sans-serif;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+a {
+    color: mediumseagreen;
+    font-family: "Arial Black", Arial, Helvetica, sans-serif;
+}
+
+.signin {
+    background-color: #ffffff;
+    text-align: center;
+    font-family: "Arial Black", Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+
+<form ACTION="managerinsert.php"METHOD="POST">
+  <div class="container">
+    <center><h1 style="color:#B22222; font-family: 'Arial Black', Arial, Helvetica, sans-serif;" size="45">GIVE APPROPRIATE DETAILS</h1></center>
+    <hr>
+      
+      <label for="MGR_ID"><b style="font-family: 'Arial Black', Arial, Helvetica, sans-serif;">MGR_ID</b></label>
+    <input type="text" placeholder="Enter MGR_ID" name="MGR_ID" required>
+
+    <label for="NAME"><b style="font-family: 'Arial Black', Arial, Helvetica, sans-serif;">NAME</b></label>
+    <input type="text" placeholder="Enter NAME" name="NAME" required>
+      
+       <label for="ADDRESS"><b style="font-family: 'Arial Black', Arial, Helvetica, sans-serif;"> ADDRESS </b></label>
+    <input type="text" placeholder="Enter ADDRESS" name="ADDRESS" required>
+      
+      <label for="SALARY"><b style="font-family: 'Arial Black', Arial, Helvetica, sans-serif;">SALARY</b></label>
+    <input type="text" placeholder="Enter SALARY" name="SALARY" required>
+      
+      <button type="update" class="registerbtn">UPDATE</button>
+    <button type="reset" class="registerbtn">RESET</button>
+  </div>
+</form>
+<p style="font-family: Arial Black"><a href="main.html"><font style="color:black">GO BACK</font></a></p>
+</body>
+</html>
+
